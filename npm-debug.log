@@ -1,0 +1,36 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'run', 'production' ]
+2 info using npm@2.11.2
+3 info using node@v0.10.28
+4 verbose node symlink /usr/local/bin/node
+5 verbose run-script [ 'preproduction', 'production', 'postproduction' ]
+6 info preproduction react_curriculum@1.0.0
+7 info production react_curriculum@1.0.0
+8 verbose unsafe-perm in lifecycle true
+9 info react_curriculum@1.0.0 Failed to exec production script
+10 verbose stack Error: react_curriculum@1.0.0 production: `webpack -p`
+10 verbose stack Exit status 255
+10 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+10 verbose stack     at EventEmitter.emit (events.js:98:17)
+10 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+10 verbose stack     at ChildProcess.EventEmitter.emit (events.js:98:17)
+10 verbose stack     at maybeClose (child_process.js:753:16)
+10 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:820:5)
+11 verbose pkgid react_curriculum@1.0.0
+12 verbose cwd /Users/uditmanektala/workspace/react_curriculum
+13 error Darwin 15.5.0
+14 error argv "node" "/usr/local/bin/npm" "run" "production"
+15 error node v0.10.28
+16 error npm  v2.11.2
+17 error code ELIFECYCLE
+18 error react_curriculum@1.0.0 production: `webpack -p`
+18 error Exit status 255
+19 error Failed at the react_curriculum@1.0.0 production script 'webpack -p'.
+19 error This is most likely a problem with the react_curriculum package,
+19 error not with npm itself.
+19 error Tell the author that this fails on your system:
+19 error     webpack -p
+19 error You can get their info via:
+19 error     npm owner ls react_curriculum
+19 error There is likely additional logging output above.
+20 verbose exit [ 1, true ]
