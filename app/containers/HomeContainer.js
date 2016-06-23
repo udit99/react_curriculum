@@ -7,12 +7,6 @@ var HomeContainer = React.createClass({
       testValue: 2
     }
   },
-  componentDidMount: function(){
-    this.setState({
-      testValue: 1
-    })
-
-  },
   render: function(){
     return (
       <div id='home'>
