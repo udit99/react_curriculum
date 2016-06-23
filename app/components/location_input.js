@@ -1,13 +1,10 @@
 var React = require('react');
 
 
-var LocationInput = React.createClass({
-  render: function(props){
-    debugger;
-    return (
-      <div> This is a location component </div>
-    )
-  }
-});
+var LocationInput = function(props){
+  return (
+    <div>This is a location component with a test value {props.foo}</div>
+  )
+}
 
 module.exports = LocationInput;
