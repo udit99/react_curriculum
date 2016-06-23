@@ -3,7 +3,10 @@ var React = require('react');
 
 var LocationInput = function(props){
   return (
-    <div>This is a location component with a test value {props.foo}</div>
+    <div id='location_input'>
+      <button id='submit_location'>Get Weather</button>
+      <input type='text' id='location'></input>
+    </div>
   )
 }
 

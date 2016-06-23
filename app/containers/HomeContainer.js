@@ -1,5 +1,5 @@
 var React = require('react');
-var LocationComponent = require('../components/location_input')
+var LocationInput = require('../components/location_input')
 
 var HomeContainer = React.createClass({
   getInitialState: function(){
@@ -14,11 +14,10 @@ var HomeContainer = React.createClass({
 
   },
   render: function(){
-    debugger;
     return (
       <div id='home'>
-        <h1>Hello Worldzzzzzzzz</h1>
-        <LocationComponent foo={this.state.testValue}/>
+        <h1>Cool Weather App</h1>
+        <LocationInput/>
       </div>
     )
   }
