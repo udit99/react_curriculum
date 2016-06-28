@@ -11,6 +11,7 @@ var Routes = (
   <Router history={hashHistory}>
     <Route path='/' component={MainComponent}>
       <IndexRoute component={HomeContainer} />
+      <Route path='/weather/:area' component={HomeContainer} />
     </Route>
   </Router>
 )

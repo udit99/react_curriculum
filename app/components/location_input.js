@@ -6,7 +6,12 @@ var LocationInput = function(props){
     <div id='location_input'>
       <form id='location_form' onSubmit={props.onFormSubmit}>
         <button id='submit_location'>Get Weather</button>
-        <input type='text' id='location'></input>
+        <input
+          type='text'
+          value={props.location}
+          onChange={props.onUpdateLocation}
+          id='location'>
+        </input>
       </form>
     </div>
   )
