@@ -2,7 +2,7 @@ var React = require('react')
 
 var Weather = function(props){
   return (
-    <div> Hello World </div>
+    <div> Hello Worldz </div>
   )
 }
 
