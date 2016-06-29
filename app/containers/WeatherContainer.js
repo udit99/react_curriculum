@@ -23,6 +23,9 @@ var WeatherContainer = React.createClass({
 
   render: function(){
     var me = this;
+    if (this.state.isLoading){
+      return <h1>Loading</h1>
+    }
     return (
       <WeatherCollection
         isLoading={this.state.isLoading}
