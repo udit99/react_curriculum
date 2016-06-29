@@ -7,4 +7,4 @@ Pending
 ----------
 - [X] Loading indicator
 - [ ] Detail page
-- [ ] Display location name
+- [X] Display location name

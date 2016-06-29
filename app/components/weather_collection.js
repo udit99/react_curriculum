@@ -9,16 +9,19 @@ var WeatherCollection = function(props){
             description={weatherRecord['weather'][0]['description']} />
   })
   return (
-    <table>
-      <tbody>
-        <tr>
-          <th>DateTime</th>
-          <th>Temperature</th>
-          <th>Description</th>
-        </tr>
-        {weather_record_tds}
-      </tbody>
-    </table>
+    <div>
+      The Weather in {props.location} for the next few days is
+      <table>
+        <tbody>
+          <tr>
+            <th>DateTime</th>
+            <th>Temperature</th>
+            <th>Description</th>
+          </tr>
+          {weather_record_tds}
+        </tbody>
+      </table>
+    </div>
   )
 }
 

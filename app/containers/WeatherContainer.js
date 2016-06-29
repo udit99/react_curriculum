@@ -29,6 +29,7 @@ var WeatherContainer = React.createClass({
     }
     return (
       <WeatherCollection
+        location={this.props.routeParams.area}
         isLoading={this.state.isLoading}
         weatherInfo={this.state.weatherInfo}
       />
