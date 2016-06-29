@@ -13,15 +13,16 @@ var WeatherContainer = React.createClass({
   },
 
   componentDidMount: function(){
-    this.setState({
-      isLoading: false,
-      weatherInfo: WeatherHelper.getWeeksWeather()
-    })
+    WeatherHelper.getWeeksWeather('foo').then(function(response){
+      this.setState({
+        isLoading: false,
+        weatherInfo: response['data']['list'],
+      })
+    }.bind(this))
   },
 
   render: function(){
     var me = this;
-    debugger;
     return (
       <WeatherCollection
         isLoading={this.state.isLoading}
