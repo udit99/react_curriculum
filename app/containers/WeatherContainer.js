@@ -17,11 +17,11 @@ var WeatherContainer = React.createClass({
       isLoading: false,
       weatherInfo: WeatherHelper.getWeeksWeather()
     })
-
   },
 
   render: function(){
     var me = this;
+    debugger;
     return (
       <WeatherCollection
         isLoading={this.state.isLoading}
