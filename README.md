@@ -5,6 +5,6 @@ Navigate to localhost:8080
 
 Pending
 ----------
-- [ ] Loading indicator
+- [X] Loading indicator
 - [ ] Detail page
 - [ ] Display location name

@@ -2,6 +2,7 @@ var React = require('react');
 var WeatherHelper = require('../utils/weather_helper')
 var Weather = require('../components/weather.js')
 var WeatherCollection = require('../components/weather_collection.js')
+var Loading = require('../components/loading')
 
 var WeatherContainer = React.createClass({
 
@@ -24,7 +25,7 @@ var WeatherContainer = React.createClass({
   render: function(){
     var me = this;
     if (this.state.isLoading){
-      return <h1>Loading</h1>
+      return <Loading/>
     }
     return (
       <WeatherCollection
