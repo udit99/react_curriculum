@@ -13,7 +13,7 @@ var WeatherContainer = React.createClass({
   },
 
   componentDidMount: function(){
-    WeatherHelper.getWeeksWeather('foo').then(function(response){
+    WeatherHelper.getWeeksWeather(this.props.routeParams.area).then(function(response){
       this.setState({
         isLoading: false,
         weatherInfo: response['data']['list'],
