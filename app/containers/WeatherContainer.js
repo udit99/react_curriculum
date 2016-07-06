@@ -5,6 +5,9 @@ var WeatherCollection = require('../components/weather_collection.js')
 var Loading = require('../components/loading')
 
 var WeatherContainer = React.createClass({
+  contextTypes: {
+    router: React.PropTypes.func.isRequired
+  },
 
   getInitialState: function(){
     return {
@@ -22,6 +25,16 @@ var WeatherContainer = React.createClass({
     }.bind(this))
   },
 
+  onDateClick: function(weatherData){
+    debugger;
+    this.context.router.push({
+      pathname: '/weather/'+ this.props.routeParams.area +'/details',
+      state: {
+        weather: weatherData
+      }
+    })
+  },
+
   render: function(){
     var me = this;
     if (this.state.isLoading){
@@ -32,6 +45,7 @@ var WeatherContainer = React.createClass({
         location={this.props.routeParams.area}
         isLoading={this.state.isLoading}
         weatherInfo={this.state.weatherInfo}
+        onDateClick={me.onDateClick}
       />
     )
   }

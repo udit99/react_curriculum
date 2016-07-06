@@ -4,6 +4,7 @@ var Weather = require('./weather')
 var WeatherCollection = function(props){
   weather_record_tds = props.weatherInfo.map(function(weatherRecord){
     return <Weather
+            onDateClick={props.onDateClick.bind(null, weatherRecord)}
             date={weatherRecord['dt_txt']}
             temperature={weatherRecord['main']['temp']}
             description={weatherRecord['weather'][0]['description']} />
