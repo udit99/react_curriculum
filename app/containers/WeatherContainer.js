@@ -26,7 +26,6 @@ var WeatherContainer = React.createClass({
   },
 
   onDateClick: function(weatherData){
-    debugger;
     this.context.router.push({
       pathname: '/weather/'+ this.props.routeParams.area +'/details',
       state: {
